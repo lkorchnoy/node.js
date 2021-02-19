@@ -1,6 +1,6 @@
 let quotesDiv = document.getElementById("quotes")
 
-fetch('https://api.kanye.rest')
+fetch('https://api.funapi.rest')
 .then(res => res.json())
 .then(quote => {
     quotesDiv.innerHTML += `<p> ${quote.quote} </p>`
@@ -9,7 +9,7 @@ fetch('https://api.kanye.rest')
 let someButton = document.getElementById("some")
 someButton.addEventListener("click", e => {
     let imageDiv = document.getElementById("image")
-    fetch("https://api.thecatapi.com/v1/images/search?")
+    fetch("https://api.thefunapi.com/v1/images/search?")
     .then(res => res.json())
     .then(images => {
         images.forEach(image => {
